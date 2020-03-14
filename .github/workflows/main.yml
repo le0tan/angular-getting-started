@@ -35,4 +35,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: ng build --prod
-      run: ng build --prod
+      run: | 
+        npm install
+        ng build --prod
